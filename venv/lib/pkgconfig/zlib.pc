@@ -1,0 +1,13 @@
+prefix=/Users/joy/Downloads/ML Projects PW/DiamondPricePrediction/venv
+exec_prefix=/Users/joy/Downloads/ML Projects PW/DiamondPricePrediction/venv
+libdir=/Users/joy/Downloads/ML Projects PW/DiamondPricePrediction/venv/lib
+sharedlibdir=/Users/joy/Downloads/ML Projects PW/DiamondPricePrediction/venv/lib
+includedir=/Users/joy/Downloads/ML Projects PW/DiamondPricePrediction/venv/include
+
+Name: zlib
+Description: zlib compression library
+Version: 1.2.13
+
+Requires:
+Libs: -L${libdir} -L${sharedlibdir} -lz
+Cflags: -I${includedir}

@@ -4,8 +4,8 @@ import pickle
 import numpy as np
 import pandas as pd
 
-from src.exception import CustomException
-from src.logger import logging
+from source_code.exception import CustomException
+from source_code.logger import logging
 
 def save_object(file_path, obj):
     try:

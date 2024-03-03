@@ -7,11 +7,11 @@ from sklearn.compose import ColumnTransformer
 import pandas as pd
 import numpy as np
 
-from src.exception import CustomException
-from src.logger import logging
+from source_code.exception import CustomException
+from source_code.logger import logging
 import sys, os
 from dataclasses import dataclass
-from src.utils import save_object
+from source_code.utils import save_object
 
 
 @dataclass

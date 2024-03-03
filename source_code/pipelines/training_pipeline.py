@@ -8,6 +8,8 @@ from source_code.components.data_ingestion import DataIngestion
 
 from source_code.components.data_transformation import DataTransformation
 from source_code.components.model_trainer import ModelTrainer
+
+
 if __name__=='__main__':
     obj=DataIngestion()
     train_data_path,test_data_path=obj.initiate_data_ingestion()
@@ -19,3 +21,4 @@ if __name__=='__main__':
 
     model_trainer=ModelTrainer()
     model_trainer.initate_model_training(train_arr,test_arr)
+

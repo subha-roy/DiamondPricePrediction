@@ -3,7 +3,6 @@ import sys
 import pickle
 import numpy as np
 import pandas as pd
-
 from source_code.exception import CustomException
 from source_code.logger import logging
 
@@ -43,4 +42,12 @@ def evaluate_model(X_train,y_train,X_test,y_test):
     
     except Exception as e:
         logging.info("Exception occured during the model training")
+        raise CustomException(e,sys)
+    
+def load_object(file_path):
+    try:
+        with open(file_path,'rb') as file_obj:
+            return pickle.load(file_obj)
+    except Exception as e:
+        logging.info('Exception Occured in load_object function utils')
         raise CustomException(e,sys)

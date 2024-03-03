@@ -1,6 +1,8 @@
 pandas 
 numpy
 flask
-
+seaborn
+matplotlib
+scikit-learn
 # it will trigger the setup.py so for that will will add a code of line in setup.pu
--e .
+#-e .
